@@ -1,0 +1,15 @@
+{
+  "name": "cicd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "*"
+  },
+  "scripts": {
+    "lint": "echo 'mock lint'",
+    "build": "echo 'mock build'",
+    "test": "echo 'mock test'"
+  },
+  "author": "starkensin",
+  "license": "ISC"
+}
