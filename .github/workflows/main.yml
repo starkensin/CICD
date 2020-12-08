@@ -1,16 +1,16 @@
 name: CICD
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
       - name: checkout master
-      - uses: actions/checkout@master
+        uses: actions/checkout@master
 
       - name: install
         run: yarn install
@@ -19,6 +19,6 @@ jobs:
         run: |
           yarn lint
           yarn build
-      
+
       - name: test
         run: yarn test
